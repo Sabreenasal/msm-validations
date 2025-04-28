@@ -13,6 +13,8 @@
 #  director_id :integer
 #
 class Movie < ApplicationRecord
+  belongs_to :director
+  
   def director
     my_director_id = self.director_id
 
